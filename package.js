@@ -17,6 +17,6 @@ Package.onUse(function(api) {
 
 Package.onTest(function(api) {
     api.use('tinytest');
-    api.use('busboy');
+    api.use('shammar13:busboy');
     api.addFiles('busboy-tests.js');
 });

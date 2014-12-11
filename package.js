@@ -12,11 +12,11 @@ Npm.depends({
 Package.onUse(function(api) {
     api.versionsFrom('1.0');
     api.export('Busboy');
-    api.addFiles(['shammar13:busboy.js'], 'server');
+    api.addFiles(['busboy.js'], 'server');
 });
 
 Package.onTest(function(api) {
     api.use('tinytest');
     api.use('shammar13:busboy');
-    api.addFiles('shammar13:busboy-tests.js');
+    api.addFiles('busboy-tests.js');
 });
